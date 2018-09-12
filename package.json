@@ -29,7 +29,9 @@
   },
   "dependencies": {
     "debug": "*",
+    "ffi": "git+https://github.com/node-ffi/node-ffi.git",
     "function-class": "^1.0.0",
+    "ref": "*",
     "ref-struct": "^1.0.2",
     "setprototypeof": "^1.0.0"
   },
