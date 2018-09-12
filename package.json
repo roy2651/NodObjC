@@ -29,10 +29,8 @@
   },
   "dependencies": {
     "debug": "*",
-    "node-ffi": "*",
     "function-class": "^1.0.0",
-    "ref": "*",
-    "ref-struct": "*",
+    "ref-struct": "^1.0.2",
     "setprototypeof": "^1.0.0"
   },
   "devDependencies": {
