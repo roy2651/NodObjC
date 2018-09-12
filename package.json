@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "debug": "*",
-    "ffi": "*",
+    "node-ffi": "*",
     "function-class": "^1.0.0",
     "ref": "*",
     "ref-struct": "*",
