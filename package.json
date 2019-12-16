@@ -32,8 +32,8 @@
     "ffi": "github:lxe/node-ffi#node-12",
     "ref": "github:lxe/ref#node-12",
     "ref-struct": "github:lxe/ref-struct#node-12",
-    "function-class": "^1.0.0",
-    "setprototypeof": "^1.0.0"
+    "function-class": "git+https://github.com/roy2651/node-function-class.git",
+    "setprototypeof": "^1.1.1"
   },
   "devDependencies": {
     "libxmljs": "~0.14.3",
