@@ -5,7 +5,7 @@ if(process.version.indexOf('0.6') == -1 && process.version.indexOf('0.8') == -1)
 {
   var $ = require('../');
   var assert = require('assert');
-  var memwatch = require('memwatch-next');
+  //var memwatch = require('memwatch-next');
 
   $.import('Foundation', 0);
   $.import('Cocoa', 0);
@@ -27,7 +27,7 @@ if(process.version.indexOf('0.6') == -1 && process.version.indexOf('0.8') == -1)
     var pool = $.NSAutoreleasePool('alloc')('init');
     var text = $.NSTextField('alloc')('initWithFrame', $.NSMakeRect(0, 0, 200, 20));
     text('retain');
-    var hd = new memwatch.HeapDiff();
+    //var hd = new memwatch.HeapDiff();
 
     for (var i = 10; i < 9000; i++) {
       var q = $.NSMakeRect(0, 0, 100, i);
@@ -42,7 +42,7 @@ if(process.version.indexOf('0.6') == -1 && process.version.indexOf('0.8') == -1)
       assert(z.origin.y == p.origin.y, 'y was invalid: ', z.origin.y, p.origin.y);
     }
     gc();
-    var diff = hd.end();
+    //var diff = hd.end();
     text('release');
     pool('release');
     text = null;
